@@ -1,0 +1,12 @@
+#mainCarousel {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#login-form {
+    height: 70vh;
+}
+
+img {
+    object-fit: contain;
+}
