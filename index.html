@@ -32,7 +32,7 @@
               <img src="images/Moda_trends_logo.png" width="228px" >
             </div>
             <div class="col-4 d-flex flex-lg-row-reverse">
-              <a href="login.html" class="p-1">
+              <a href="login.html" id="loginButton" class="p-1">
                 <img src="images/user_icon.svg" width="32px" height="32px">
               </a>
               <a href="contacto.html" class="p-1">
@@ -40,6 +40,9 @@
               </a>
               <a href="micesta.html" class="p-1">
                 <img src="images/bag_icon.svg" width="32px" height="32px">
+              </a>
+              <a href="#" id="logoutButton" class="p-1 d-none">
+                <img src="images/logout_icon.svg" width="25px" height="25px">
               </a>
             </div>
           </div>
@@ -172,4 +175,20 @@
 </div>
   </footer>
   </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (sessionStorage.getItem('username')) {
+          document.getElementById('loginButton').classList.add('d-none');
+          document.getElementById('logoutButton').classList.remove('d-none');
+      }
+  });
+  
+  function logout() {
+      sessionStorage.removeItem('username');
+      window.location.href = 'login.html';
+  }
+  
+  document.getElementById('logoutButton').addEventListener('click', logout);
+  </script>
 </html>

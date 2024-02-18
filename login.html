@@ -91,8 +91,24 @@
   </footer>
   <script>
     function checkInput() {
+      console.log("log")
       document.getElementById("login-form").classList.add("was-validated");
     }
+
+    
+
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      console.log("hola")
+      // Obtener valores de los campos de entrada
+      var username = document.getElementById('loginEmail').value;
+      var password = document.getElementById('loginPassword').value;
+      sessionStorage.setItem('username', username);
+      console.log(username)
+      // Redireccionar o realizar otra acción después del inicio de sesión
+      alert('Inicio de sesión exitoso');
+      
+  });
+
   </script>
   </body>
 </html>

@@ -9,10 +9,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
       </head>
-      <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -35,7 +33,7 @@
           <img src="images/Moda_trends_logo.png" width="228px" >
         </div>
         <div class="col-4 d-flex flex-lg-row-reverse">
-          <a href="login.html" class="p-1">
+          <a href="login.html" id="loginButton" class="p-1">
             <img src="images/user_icon.svg" width="32px" height="32px">
           </a>
           <a href="contacto.html" class="p-1">
@@ -43,6 +41,9 @@
           </a>
           <a href="micesta.html" class="p-1">
             <img src="images/bag_icon.svg" width="32px" height="32px">
+          </a>
+          <a href="#" id="logoutButton" class="p-1 d-none">
+            <img src="images/logout_icon.svg" width="25px" height="25px">
           </a>
         </div>
       </div>
@@ -81,18 +82,9 @@
 </div>
   <div class="container-md col-10 g-4">
 
-    <div class="row row-cols-1 row-cols-md-2 g-4 mb-3 text-center">
-        <div class="col">
-            <div class="card h-100">
-              <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kYSUyMCUyMGhvbWJyZXxlbnwwfDF8MHx8fDA%3D" class="card-img-top" alt="Camisa blanca">
-              <div class="card-body">
-                <h5 class="card-title">Camisa blanca</h5>
-                <p class="card-text">25,90€</p>
-                <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
-              </div>
-            </div>
-          </div>
-      <div class="col">
+    <div id= cards class="row row-cols-1 row-cols-md-2 g-4 mb-3 text-center">
+        
+      <!-- <div class="col">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1526887520775-4b14b8aed897?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1vZGElMjAlMjBob21icmV8ZW58MHwxfDB8fHww" class="card-img-top" alt="Gafas">
           <div class="card-body">
@@ -101,58 +93,10 @@
             <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
           </div>
         </div>
-      </div>
-
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://images.unsplash.com/photo-1599725728689-f5c3cbb086ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1vZGElMjAlMjBob21icmV8ZW58MHwxfDB8fHww" class="card-img-top" alt="Camisa blanca">
-         <div class="card-body">
-            <h5 class="card-title">Camisa blanca</h5>
-            <p class="card-text">16,90€</p>
-            <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
-          </div>
-        </div>
-      </div>
-      
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://images.unsplash.com/photo-1602810320073-1230c46d89d4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1vZGElMjAlMjBob21icmV8ZW58MHwxfDB8fHww" class="card-img-top" alt="Camisa azul">
-         <div class="card-body">
-            <h5 class="card-title">Camisa azul </h5>
-            <p class="card-text">25,90€</p>
-            <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="https://images.unsplash.com/photo-1626557981101-aae6f84aa6ff?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fG1vZGElMjAlMjBob21icmV8ZW58MHwxfDB8fHww" class="card-img-top" alt="Camisa blanca">
-          <div class="card-body">
-            <h5 class="card-title">Camisa blanca</h5>
-            <p class="card-text">9,90€</p>
-            <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
-          </div>   
+      </div>  --> 
   
   </div> 
 </div>
-<div class="col">
-  <div class="card h-100">
-    <img src="https://images.unsplash.com/photo-1511105612320-2e62a04dd044?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1vZGElMjAlMjBob21icmV8ZW58MHwxfDB8fHww" class="Zapatillas negras">
-    <div class="card-body">
-      <h5 class="card-title">Zapatillas negras</h5>
-      <p class="card-text">76,90€</p>
-      <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 
 <div class="bg-warning-subtle p-2 col pb-5 px-5 pt-5 ">
   <h2 class=" col pb-3 px-5 pt-3">Iniciar sesión</h2>
@@ -192,5 +136,46 @@
 
 </div>
   </footer>
+  <script>
+
+    fetch('https://fakestoreapi.com/products').then((data)=>{
+      return data.json();
+    }).then((completedata)=>{
+      let data1 = "";
+      completedata.map((values)=>{
+        data1+=`<div class="col">
+        <div class="card h-100">
+          <img src="${values.image}" class="card-img-top" alt="Gafas">
+          <div class="card-body">
+            <h5 class="card-title">${values.title}</h5>
+            <p class="card-text">${values.price}</p>
+            <a class="btn btn-outline-dark" href="" role="button">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>`
+      });
+      document.getElementById("cards").innerHTML=data1;
+
+    }).catch((err)=>{
+      console.log(err);
+    })
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+      if (sessionStorage.getItem('username')) {
+          document.getElementById('loginButton').classList.add('d-none');
+          document.getElementById('logoutButton').classList.remove('d-none');
+      }
+  });
+  
+  function logout() {
+      sessionStorage.removeItem('username');
+      window.location.href = 'login.html';
+  }
+  
+  document.getElementById('logoutButton').addEventListener('click', logout);
+
+  </script>
   </body>
 </html>
